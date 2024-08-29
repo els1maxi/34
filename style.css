@@ -1,0 +1,82 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+#drawingArea {
+    width: 600px;
+    height: 400px;
+    border: 2px solid #d4d4d4;
+    position: relative;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.color-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 12px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 12px 0 0 12px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 320px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.input-group input,
+.input-group button {
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #d4d4d4;
+}
+
+.input-group button {
+    background: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
